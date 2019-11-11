@@ -14,10 +14,15 @@ public class MilesPerGallon {
         System.out.println("Mileage at start of trip: ");
         start = input.nextDouble();
 
+
         System.out.println("Mileages at end of trip: ");
         end = input.nextDouble();
+
+
         System.out.println("Enter gallons of gas used: ");
         gallonsUsed = input.nextDouble();
+        input.close();
+
         milesDriven = end - start;
 
         milesPerGallon= milesDriven/gallonsUsed;
